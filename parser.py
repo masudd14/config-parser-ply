@@ -26,7 +26,7 @@ def p_statement_section(p):
     global current_section
     current_section = p[2]
     config[current_section] = {}
-    print(f"-> بخش جدید: [{current_section}]")
+    print(f"-> new section: [{current_section}]")
 
 
 def p_statement_key_value(p):
@@ -41,7 +41,7 @@ def p_statement_key_value(p):
         config[current_section] = {}
         
     config[current_section][key] = value
-    print(f"   + افزودن: {key} = {value} به [{current_section}]")
+    print(f"   + add: {key} = {value} به [{current_section}]")
 
 
 def p_statement_newline_only(p):
@@ -53,8 +53,8 @@ def p_statement_newline_only(p):
 
 def p_error(p):
     if p:
-        print(f"خطای نحوی: توکن غیرمنتظره '{p.value}' در خط {p.lineno}")
+        print(f"error '{p.value}' in {p.lineno} line")
     else:
-        print("خطای نحوی در انتهای ورودی")
+        print("error in the end of the input")
 
 parser = yacc.yacc()
