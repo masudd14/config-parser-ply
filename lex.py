@@ -41,7 +41,7 @@ def t_NEWLINE(t):
 t_ignore = ' \t' 
 
 def t_error(t):
-    print(f"خطای Lexer: کاراکتر غیرمجاز '{t.value[0]}' در خط {t.lexer.lineno}")
+    print(f"error Lexer: unsuported charcter '{t.value[0]}' in {t.lexer.lineno} line")
     t.lexer.skip(1)
 
 lexer = lex.lex()
