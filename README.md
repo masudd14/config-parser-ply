@@ -19,7 +19,10 @@ data and convert it into a structured **Python dictionary**.
   - **Lex** (tokenizer)
   - **Yacc** (parser)
 - Returns the final parsed configuration as a clean Python dictionary
+---
 
+## ✅ How TO Run
+You can see the result by runnig main.py file
 ---
 
 ## 📦 Requirements
