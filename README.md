@@ -21,7 +21,7 @@ data and convert it into a structured **Python dictionary**.
 - Returns the final parsed configuration as a clean Python dictionary
 ---
 
-## ✅ How TO Run
+## ✅ How To Run
 You can see the result by runnig main.py file
 
 ---
