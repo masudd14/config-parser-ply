@@ -22,7 +22,7 @@ data and convert it into a structured **Python dictionary**.
 ---
 
 ## ✅ How To Run
-You can see the result by runnig main.py file
+You can see the result by runnig the main.py 
 
 ---
 
